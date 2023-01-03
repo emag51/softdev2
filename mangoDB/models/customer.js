@@ -4,11 +4,11 @@ const CustomerSchema = mongoose.Schema(
     {
         CustomerId: Number,
         FullName:   String,
-        Adress:     String
+        Address:    String
     },
     {
         versionKey: false
     }
 )
 
-module.exports = mongoose.model('Customer','CustomerSchema')
+module.exports = mongoose.model('Customer',CustomerSchema)
